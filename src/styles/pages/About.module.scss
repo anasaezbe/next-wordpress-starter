@@ -1,0 +1,94 @@
+@import "styles/settings/__settings";
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .subtitle{
+    color: $color-primario-300;
+  }
+  .atentionCall {
+    //font-size: 2rem;
+  }
+}
+
+
+.manifesto {
+  display: flex;
+  gap: 4rem;
+  img{
+    width: 50%;
+    object-fit: cover;
+  }
+  .div{
+    width: 50%;
+  }
+}
+
+.fotoequipo {
+  display: flex;
+  justify-content: end;
+  padding-top: 2rem;
+  img{
+    width: 80%;
+    height: 380px;
+    object-fit: cover;
+  }
+}
+
+.nuestroequipo{
+  .gridtarjetas{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    img{
+      object-fit: cover;
+    }
+  }
+
+
+}
+
+.nuestrosaliados{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .p{
+    max-width: 15ch;
+  }
+  .logosaliados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+}
+
+.upsidedownmemento{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .card{
+    
+    border: 2px solid $color-gray-600;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cardcontent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  justify-content: center;
+    }
+  }
+  &:hover{
+    .card{
+      background-color: $color-gray-600;
+    }
+  }
+}
+
+

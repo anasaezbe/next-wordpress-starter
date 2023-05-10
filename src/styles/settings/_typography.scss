@@ -1,2 +1,197 @@
-$font-family-default: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
-  Courier New, monospace;
+
+
+@font-face {
+  font-family: "BodyFont";
+
+  src: local("PP Neue Montreal Regular"), local("PP Neue Montreal Regular TT"),
+    url("./PPNeueMontreal-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./PPNeueMontreal-Regular.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("./PPNeueMontreal-Regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ //  url('./PPNeueMontreal-Regular.otf')  format('opentype')
+; /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BodyFont";
+
+  src: local("PP Neue Montreal Bold"), local("PP Neue Montreal Bold TT"),
+    url("./PPNeueMontreal-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./PPNeueMontreal-Bold.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("./PPNeueMontreal-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ //  url('./PPNeueMontreal-Bold.otf')  format('opentype')
+; /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BodyFont";
+
+  src: local("PP Neue Montreal Italic"), local("PP Neue Montreal Italic TT"),
+    url("./PPNeueMontreal-Italic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./PPNeueMontreal-Italic.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("./PPNeueMontreal-Italic.ttf") format("truetype"),
+    /* Safari, Android, iOS */ //  url('./PPNeueMontreal-Italic.otf')  format('opentype')
+; /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: italic;
+}
+
+/**IMPORTANTE el fontface no esta funcionando **/
+
+/**Fuente titulares**/
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+/**BACKUP BODY, si funciona**/
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$font-family-default: "BodyFont", "Source Sans 3", "Space Grotesk", sans-serif;
+
+/***Typography settings***/
+
+//Las configuraciones que están hechas con selectores html están el globals.css porque si no da problemas.
+
+//Tamaños "headers" Estos primeros son super pequeños para dispositivos como smartwatch
+
+.display1 {
+  //Para los titularacos de la home
+  font-size: 40px;
+}
+
+.display2 {
+  font-size: 32px;
+}
+
+.display3 {
+  //Para titulo gral de subpágina, como Future Materials
+
+  font-size: 28px;
+}
+
+.h1 {
+  font-size: 24px;
+}
+.h2 {
+  font-size: 20px;
+}
+
+.h3 {
+  font-size: 16px;
+}
+
+.h4 {
+  font-size: 12px;
+}
+
+//Breakpoints para tamaños
+@media screen and (min-width: 320px) {
+  .display1 {
+    font-size: calc(52px + 2 * ((100vw - 320px) / 680));
+  }
+
+  .display2 {
+    font-size: calc(40px + 2 * ((100vw - 320px) / 680));
+  }
+
+  .display3 {
+
+    font-size: calc(32px + 2 * ((100vw - 320px) / 680));
+  }
+
+  .h1 {
+    font-size: calc(28px + 2 * ((100vw - 320px) / 680));
+  }
+  .h2 {
+    font-size: calc(24px + 2 * ((100vw - 320px) / 680));
+  }
+  
+  .h3 {
+    font-size: calc(20px + 2 * ((100vw - 320px) / 680));
+  }
+  
+  .h4 {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 680));
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .display1 {
+    font-size: 140px;
+  }
+
+  .display2 {
+    font-size: 80px;
+  }
+
+  .display3 {
+    font-size: 56px;
+  }
+
+  .h1 {
+    font-size: calc(40px + 2 * ((100vw - 320px) / 680));
+  }
+  .h2 {
+    font-size: calc(32px + 2 * ((100vw - 320px) / 680));
+  }
+  
+  .h3 {
+    font-size: calc(26px + 2 * ((100vw - 320px) / 680));
+  }
+  
+  .h4 {
+    font-size: calc(20px + 2 * ((100vw - 320px) / 680));
+  }
+}
+
+//Moderneces tamaños que no son comaptibles con muchos browsers
+.display1 {
+  font-size: clamp(40px, 4vw, 140px);
+}
+.display2 {
+  font-size: clamp(32px, 4vw, 80px);
+}
+.display3 {
+  font-size: clamp(28px, 4vw, 56px);
+}
+
+.h1 {
+  font-size: clamp(24px, 4vw, 40px);
+}
+.h2 {
+  font-size: clamp(20px, 4vw, 32px);
+}
+
+.h3 {
+  font-size: clamp(16px, 4vw, 26px);
+}
+
+.h4 {
+  font-size: clamp(12px, 4vw, 20px);
+}
+
+//pesos "headers"
+
+.semiBoldH {
+  font-weight: 400;
+}
+
+.extraBoldH {
+  font-weight: 700;
+}
+
+//Otras transformaciones
+.lowercase {
+  text-transform: lowercase !important;
+}
+.camelcase {
+  text-transform: capitalize !important;
+}
+.titleFont{
+  font-family: "Space Grotesk";;
+}
+

@@ -9,6 +9,7 @@ import Container from 'components/Container';
 
 import styles from './Footer.module.scss';
 
+
 const Footer = () => {
   const { metadata = {}, recentPosts = [], categories = [] } = useSite();
   const { title } = metadata;
@@ -21,60 +22,23 @@ const Footer = () => {
     <footer className={styles.footer}>
       {hasMenu && (
         <Section className={styles.footerMenu}>
-          <Container>
+          <Container>            
             <ul className={styles.footerMenuColumns}>
-              {hasRecentPosts && (
-                <li>
-                  <Link href="/posts/">
-                    <a className={styles.footerMenuTitle}>
-                      <strong>Recent Posts</strong>
-                    </a>
-                  </Link>
-                  <ul className={styles.footerMenuItems}>
-                    {recentPosts.map((post) => {
-                      const { id, slug, title } = post;
-                      return (
-                        <li key={id}>
-                          <Link href={postPathBySlug(slug)}>
-                            <a>{title}</a>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-              )}
-              {hasRecentCategories && (
-                <li>
-                  <Link href="/categories/">
-                    <a className={styles.footerMenuTitle}>
-                      <strong>Categories</strong>
-                    </a>
-                  </Link>
-                  <ul className={styles.footerMenuItems}>
-                    {categories.map((category) => {
-                      const { id, slug, name } = category;
-                      return (
-                        <li key={id}>
-                          <Link href={categoryPathBySlug(slug)}>
-                            <a>{name}</a>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-              )}
               <li>
-                <p className={styles.footerMenuTitle}>
-                  <strong>More</strong>
-                </p>
+                <ul className={styles.footerMenuTitle}>
+                <strong className={styles.titleFont}>¡Hablemos!</strong>
+                </ul>
+              </li>
+              <li>
                 <ul className={styles.footerMenuItems}>
                   <li>
-                    <a href="/feed.xml">RSS</a>
+                    <a href="#"><u>Dirección:</u> Calle Aldapa, 2 Local 4, 28025 Madrid</a>
                   </li>
                   <li>
-                    <a href="/sitemap.xml">Sitemap</a>
+                    <a href="tel:+34697286914"><u>Teléfono:</u> 697 28 69 14</a>
+                  </li>
+                  <li>
+                    <a href="mailto:hola@contra-architecture.com?Subject=Consulta"><u>Mail:</u> hola@contra-architecture.com</a>
                   </li>
                 </ul>
               </li>
@@ -86,7 +50,7 @@ const Footer = () => {
       <Section className={styles.footerLegal}>
         <Container>
           <p>
-            &copy; {new Date().getFullYear()} {title}
+            Proudly baked by {title} &copy; {new Date().getFullYear()} All rights reserved
           </p>
         </Container>
       </Section>

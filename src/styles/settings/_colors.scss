@@ -1,13 +1,16 @@
+$color-gray-0: #fff;
 $color-gray-50: #eef0f3;
-$color-gray-100: #cfd7de;
-$color-gray-200: #b1bdca;
-$color-gray-300: #93a3b5;
-$color-gray-400: #7589a0;
-$color-gray-500: #5c7086;
-$color-gray-600: #475768;
-$color-gray-700: #333e4a;
-$color-gray-800: #1e242b;
-$color-gray-900: #090b0d;
+$color-gray-100: #E6E8E8; //corporativo
+$color-gray-200: #C6C6C6;
+$color-gray-300: #9B9B9B;
+$color-gray-400: #727272;
+$color-gray-500: #4B4B4B;
+$color-gray-600: #292929; //corporativo
+$color-gray-700: #333e4a; //no se usa en nuestro sistema
+$color-gray-800: #1e242b; //no se usa en nuestro sistema
+$color-gray-900: #090b0d; //no se usa en nuestro sistema
+
+//Si vemos gray 700+ en algun lado, cambiar por menor.
 
 $color-blue-50: #f3f8ff;
 $color-blue-100: #c0ddff;
@@ -20,4 +23,23 @@ $color-blue-700: #00418d;
 $color-blue-800: #002a5a;
 $color-blue-900: #001227;
 
-$color-primary: $color-blue-500;
+$color-primario-50: #FEE5D0;
+$color-primario-100: #FFA75D;
+$color-primario-200: #FF7932;
+$color-primario-300: #FF570D; //corporativo
+$color-primario-400: #BD1300;
+$color-primario-500: #8C0000;
+
+
+$color-personalidad-100: #FFE4C4;
+$color-personalidad-200: #FBB799;
+$color-personalidad-300: #D09073; //corporativo
+$color-personalidad-400: #9E6449;
+$color-personalidad-500: #723D24;
+
+
+
+
+
+
+$color-primary: $color-primario-300;
