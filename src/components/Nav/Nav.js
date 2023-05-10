@@ -31,6 +31,13 @@ const Nav = () => {
   // const navigationLocation = process.env.WORDPRESS_MENU_LOCATION_NAVIGATION || MENU_LOCATION_NAVIGATION_DEFAULT;
   // const navigation = findMenuByLocation(menus, navigationLocation);
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = useCallback(() => {
+    setMenuOpen(!menuOpen);
+  }, [menuOpen]);
+
+
   return (
     <nav className={styles.nav}>
       <Section className={styles.navSection}>
@@ -66,41 +73,41 @@ const Nav = () => {
               )}
             </ul>
           </Container> */}
-        <div className={styles.hamburger}>
-          <BsList/>
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          {menuOpen? <BsXLg/>:<BsList/>}
+          
+          
           
 
 
         </div>
-        <div className={styles.cross}>
-          <BsXLg/>
           
 
-
-        </div>
+        
 
         {/* ESTO ES ESTÁTICO */}
-        <Container>
-          <ul className={styles.navMenu}>
+        <div>
+        
+          <ul className={`${styles.navMenu} ${menuOpen ? styles.open : ''}`}>
             <ul className={styles.top}>
-              <li className={`${styles.h3} ${styles.titleFont}` }>
+              <li className={`${styles.h3} ${styles.titleFont} ${styles.uppercase} ${styles.extraBoldH}`}>
                 <Link href="/categories/architecture">Architecture</Link>
               </li>
-              <li className={styles.h3}>
+              <li className={`${styles.h3} ${styles.titleFont} ${styles.uppercase} ${styles.extraBoldH}`}>
                 <Link href="/communication">Communication</Link>
               </li>
-              <li className={styles.h3}>
+              <li className={`${styles.h3} ${styles.titleFont} ${styles.uppercase} ${styles.extraBoldH}`}>
                 <Link href="/future">Future</Link>
               </li>
             </ul>
-            <ul className={styles.bottom}>
+            <ul className={`${styles.h3} ${styles.titleFont} ${styles.uppercase} ${styles.extraBoldH}`}>
               <li className={styles.h3}>
                 <Link href="/about">About</Link>
               </li>
-              <li className={styles.h3}>Contact</li>
+              <li className={`${styles.h3} ${styles.titleFont} ${styles.uppercase} ${styles.extraBoldH}`}>Contact</li>
             </ul>
           </ul>
-        </Container>
+        </div>
         {/* </Section> */}
         {/* )} */}
       </Section>
