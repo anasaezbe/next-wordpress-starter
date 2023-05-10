@@ -44,15 +44,47 @@ export default function CustomAbout() {
           <div className={styles.gridtarjetas}>
             <div className={styles.tarjetaind}>
               <h3>Niko Barrena</h3>
-              <h4>Director ejecutivo</h4>
-              <p>Me gusta saltar, girar y dar volteretas</p>
+              <h5>Director ejecutivo</h5>
+              <p>Me gusta saltar, girar y dar volteretas padding: 4rem 0; Me gusta saltar, girar y dar volteretas</p>
+              
             </div>
-          <img alt="foto de equip" src="https://static.vecteezy.com/system/resources/previews/002/098/203/original/silver-tabby-cat-sitting-on-green-background-free-photo.jpg"/>
-          <img alt="foto de equip" src="https://static.vecteezy.com/system/resources/previews/002/098/203/original/silver-tabby-cat-sitting-on-green-background-free-photo.jpg"/>
-          <img alt="foto de equip" src="https://static.vecteezy.com/system/resources/previews/002/098/203/original/silver-tabby-cat-sitting-on-green-background-free-photo.jpg"/>
-          <img alt="foto de equip" src="https://static.vecteezy.com/system/resources/previews/002/098/203/original/silver-tabby-cat-sitting-on-green-background-free-photo.jpg"/>
-          <img alt="foto de equip" src="https://static.vecteezy.com/system/resources/previews/002/098/203/original/silver-tabby-cat-sitting-on-green-background-free-photo.jpg"/>
-          
+            <div className={styles.tarjetaind}>
+              <h3>Niko Barrena</h3>
+              <h5>Director ejecutivo</h5>
+              <p>Me gusta saltar, girar y dar volteretas Me gusta saltar, girar y dar volteretas</p>
+            </div>
+            <div className={styles.tarjetaind}>
+              <h3>Niko Barrena</h3>
+              <h5>Director ejecutivo</h5>
+              <p>Me gusta saltar, girar y dar volteretas Me gusta saltar, girar y dar volteretas</p>
+            </div>
+            <div className={styles.tarjetaind}>
+              <h3>Niko Barrena</h3>
+              <h5>Director ejecutivo</h5>
+              <p>Me gusta saltar, girar y dar volteretas Me gusta saltar, girar y dar volteretas</p>
+            </div>
+            <div className={styles.tarjetaind}>
+              <h3>Niko Barrena</h3>
+              <h5>Director ejecutivo</h5>
+              <p>Me gusta saltar, girar y dar volteretas Me gusta saltar, girar y dar volteretas</p>
+            </div>
+            <div className={styles.tarjetaind}>
+              <h3>Niko Barrena</h3>
+              <h5>Director ejecutivo</h5>
+              <p>Me gusta saltar, girar y dar volteretas Me gusta saltar, girar y dar volteretas</p>
+            </div>
+            <div className={styles.tarjetaind}>
+              <h3>Niko Barrena</h3>
+              <h5>Director ejecutivo</h5>
+              <p>Me gusta saltar, girar y dar volteretas Me gusta saltar, girar y dar volteretas</p>
+            </div>
+            <div className={styles.tarjetaind}>
+              <h3>Niko Barrena</h3>
+              <h5>Director ejecutivo</h5>
+              <p>Me gusta saltar, girar y dar volteretas Me gusta saltar, girar y dar volteretas</p>
+            </div>
+            
+         
           </div>
           
         </div>
